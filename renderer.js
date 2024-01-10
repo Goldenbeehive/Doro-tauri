@@ -193,7 +193,7 @@ startButton.addEventListener('click', () => {
         timerStateText.textContent = "Pause"
         if (currentTimerMode == TimerModes.POMO) {
             endTimerIfExists()
-            startTimer(0.1)
+            startTimer(25)
         }
         if (currentTimerMode == TimerModes.SBREAK) {
             endTimerIfExists()
@@ -236,7 +236,7 @@ function startResetAnimation() {
         timerStateText.textContent = "Pause"
         if (currentTimerMode == TimerModes.POMO) {
             endTimerIfExists()
-            startTimer(0.1)
+            startTimer(25)
             return;
         }
         if (currentTimerMode == TimerModes.SBREAK) {

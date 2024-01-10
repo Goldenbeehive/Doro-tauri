@@ -96,7 +96,7 @@
       {
         "fullscreen": false,
         "height": 125,
-        "resizable": true,
+        "resizable": false,
         "decorations": false,
         "transparent": true,
         "title": "Doro",
