@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="module" src="./renderer.js" defer></script>
+    <title>Hello test!</title>
+</head>
+
+<body>
+    
+    <div data-tauri-drag-region class="draggable">
+        <div data-tauri-drag-region class="title-bar">
+            <div data-tauri-drag-region  class="title">Doro</div>
+            <div class="buttons">
+                <div class="button" id="min">
+                    <img src="/green.svg">
+                </div>
+                <div class="button" id="max">
+                    <img src='/yellow.svg'>
+                </div>
+                <div id="close">
+                    <img src='/red.svg'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-body">
+        <div>
+            <p id="edit" class="editable">Studying...✏️</p>
+        </div>
+        <div>
+            <p id="timing">-</p>
+        </div>
+        <div id="progressflex">
+            <div class="gradient-box"></div>
+            <p id="percentage-text">100%</p>
+        </div>
+        <div id="state">
+            <svg width="69" height="14" viewBox="0 0 69 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M62 0H-7L0 7L-7 14H62L69 7L62 0Z" />
+            </svg>
+            <div id='state-collection'>
+                <div id='collection'>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="14">
+                        <path
+                            d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"
+                            fill="black" />
+                    </svg>
+                    <p id="timerMode">Pomo</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="editbutton">
+            <svg width="69" height="14" viewBox="0 0 69 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M62 0H-7L0 7L-7 14H62L69 7L62 0Z" />
+            </svg>
+            <div id='edit-collection'>
+                <p>Edit</p>
+            </div>
+        </div>
+        <div id="pause">
+            <svg width="69" height="14" viewBox="0 0 69 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M62 0H-7L0 7L-7 14H62L69 7L62 0Z" />
+            </svg>
+            <div id='pause-collection'>
+                <p id ="timerStateText">Start</p>
+            </div>
+            
+        </div>
+        <div id="reset">
+            <svg width="69" height="14" viewBox="0 0 69 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M62 0H-7L0 7L-7 14H62L69 7L62 0Z" />
+            </svg>
+            <div id='reset-collection'>
+                <p id ="resetTest">Reset</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

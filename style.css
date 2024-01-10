@@ -1,0 +1,354 @@
+ /* CSS reset */
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+
+ * {
+     margin: 0;
+     user-select: none;
+ }
+
+ body {
+     line-height: 1.5;
+     -webkit-font-smoothing: antialiased;
+ }
+
+ 
+ img,
+ picture,
+ video,
+ canvas,
+ svg {
+     display: block;
+     max-width: 100%;
+ }
+
+ input,
+ button,
+ textarea,
+ select {
+     font: inherit;
+ }
+
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     overflow-wrap: break-word;
+ }
+
+ #root,
+ #__next {
+     isolation: isolate;
+ }
+
+ @font-face {
+     font-family: 'UbuntuMono-B';
+     src: url('/UbuntuMono-B.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: 'UbuntuMono-R';
+     src: url('/UbuntuMono-R.ttf') format('truetype');
+ }
+
+ body {
+     font-family: 'UbuntuMono-B';
+     padding: 0;
+     margin: 0;
+     color: white
+ }
+
+ .draggable {
+     -webkit-app-region: drag;
+     height: 25px;
+     width: 100%;
+     background-color: #232633;
+     border-radius: 10px 10px 0 0;
+     margin: 0;
+ }
+
+ #title {
+     margin: 0;
+ }
+
+ .title-bar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-left: 20px;
+ }
+
+ .title {
+     flex: 1;
+     text-align: center;
+     align-items: center;
+     margin-left: 10px;
+ }
+
+ #edit {
+     margin: 0;
+     font-family: 'UbuntuMono-R';
+     font-size: 14px;
+     margin-left: 20px;
+     padding-top: 5px;
+ }
+
+ #editbutton svg {
+     fill: #746fd4;
+ }
+
+ #timerMode {
+     user-select: none;
+ }
+
+ #edit-collection>* {
+     user-select: none;
+ }
+
+ #timerStateText {
+     user-select: none;
+ }
+
+ #timing {
+     margin: 0;
+     font-family: 'UbuntuMono-R';
+     font-size: 14px;
+     margin-left: 20px;
+ }
+
+ .buttons {
+     display: flex;
+     gap: 10px;
+     margin-right: 10px;
+     margin-top: 2px;
+     -webkit-app-region: no-drag;
+ }
+
+ #close:hover {
+     opacity: 50%;
+ }
+
+ #max:hover {
+     opacity: 50%;
+ }
+
+ #min:hover {
+     opacity: 50%;
+ }
+
+ #main-body {
+     border-radius: 0 0 10px 10px;
+     background-color: #313445a3;
+     display: flex;
+     flex-direction: column;
+     height: calc(100vh - 25px);
+ }
+
+ #progressflex {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 10px;
+ }
+
+ #percentage-text {
+     margin: 0;
+ }
+
+ .gradient-box {
+     width: 80%;
+     /*max is 80*/
+     height: 28px;
+     margin-left: 20px;
+     background: linear-gradient(90deg, #5D56D2 0%, #CB68EF 100%);
+     transition: width 0.5s ease-in-out;
+ }
+
+ #state {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     z-index: 3;
+     fill: #5D56D2;
+     cursor: default;
+ }
+
+ #state svg {
+     fill: #5690d2;
+     border-radius: 0px 0px 0px 10px;
+
+ }
+
+ #collection {
+     display: flex;
+     flex-direction: row;
+     gap: 2px;
+ }
+
+ #state-collection {
+     position: fixed;
+     font-family: 'UbuntuMono-R';
+     font-size: 12px;
+     left: 5px;
+     bottom: 0;
+     top: calc(100vh - 15px);
+     z-index: 5;
+ }
+
+ #edit-collection {
+     position: fixed;
+     font-family: 'UbuntuMono-R';
+     font-size: 12px;
+     left: 80px;
+     bottom: 0;
+     top: calc(100vh - 15px);
+     z-index: 9;
+ }
+
+ #pause-collection {
+     position: fixed;
+     font-family: 'UbuntuMono-R';
+     font-size: 12px;
+     left: 135px;
+     bottom: 0;
+     top: calc(100vh - 15px);
+     z-index: 7;
+ }
+
+ #editbutton {
+     position: fixed;
+     left: 60px;
+     bottom: 0;
+     z-index: 2;
+     cursor: default;
+
+ }
+
+ #pause {
+     position: fixed;
+     left: 120px;
+     bottom: 0;
+     z-index: 1;
+     cursor: default;
+ }
+
+ #pause svg {
+     fill: #F7AF9D;
+ }
+
+ #pause:hover {
+     svg {
+         fill: #f6c3b6;
+     }
+ }
+
+ #editbutton:hover {
+     svg {
+         fill: #8c89d2;
+     }
+ }
+
+ #state:hover {
+     svg {
+         fill: #80a6d0;
+     }
+ }
+
+ .editable {
+     border: none;
+     outline: none;
+     padding: 0;
+     margin: 0;
+     background-color: transparent;
+     cursor: default;
+
+     display: inline-block;
+ }
+
+ .editable.editing {
+     cursor: text;
+     /* Change cursor to text when in editing mode */
+     overflow: hidden;
+ }
+ #reset svg
+ {
+    fill: rgb(254, 120, 120);
+ }
+ #reset:hover svg
+ {
+    fill: rgb(255, 152, 152);
+ }
+ #reset{
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+    z-index: 0;
+    cursor: default;
+     
+ }
+ #reset-collection{
+    position: fixed;
+     font-family: 'UbuntuMono-R';
+     font-size: 12px;
+     left: 50px;
+     bottom: 0;
+     top: calc(100vh - 15px);
+     z-index: 7;
+      
+ }
+ 
+@keyframes spawnFromLeft {
+    from {
+      left: 50px;
+    }
+    to {
+      left:195px;
+    }
+  } 
+  @keyframes spawnFromLeftSvg {
+    from {
+      left:50px;
+    }
+    to {
+      left:180px;
+    }
+  } 
+
+  @keyframes revspawnFromLeft {
+    from {
+      left: 195px;
+    }
+    to {
+      left:50px;
+    }
+  } 
+  @keyframes revspawnFromLeftSvg {
+    from {
+      left:180px;
+    }
+    to {
+      left:50px;
+    }
+  } 
+  .startResetAnimation {
+    animation: spawnFromLeftSvg .5s ease-out forwards;
+  }
+  
+  .startResetCollectionAnimation {
+    animation: spawnFromLeft .5s ease-out forwards;
+  }
+  .revstartResetAnimation {
+    animation: revspawnFromLeftSvg .5s ease-in forwards;
+  }
+  .revstartResetCollectionAnimation {
+    animation: revspawnFromLeft .5s ease-in forwards;
+  }
+
+  
+   
