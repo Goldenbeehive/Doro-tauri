@@ -45,7 +45,7 @@ This Tauri-based repository provides a more optimized file size and leverages Ta
 ### Timer Controls
 
 - **Start/Pause/Continue**: Click the button to start the timer. While running, click again to pause, and click once more to continue.
-- **State Change**: Click on the mode (Pomodoro, Short Break, Long Break) to switch between different modes.
+- **Reset**: Click on the Reset button to reset a timer after you start it.
 
 ### Editable Mode
 
